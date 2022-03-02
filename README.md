@@ -15,7 +15,7 @@ Therefore an semantic search engine with scalability is necessary to tackle the 
 
 Stackoverflow has received over 21 million questions and 31 million answers as of 2021 with thousands of question asked daily. In order to be effectively crate a semantic search engine with large amounts of data, we need to be able to preprocess the data effectively and extract contextual information from them.
 
-This dataset provided by Stack overflow contains about 37000 unique tags.
+This dataset provided by Stack overflow contains 37000 unique tags.
 
 Source: https://www.kaggle.com/stackoverflow/stacksample
 
@@ -158,3 +158,15 @@ Tried spell checkers on data, unfortunately none of them performed well.
    Due to compute constrains only BERT with title of the question is used during deployment.  
    Flask api is used to host the applicaton in local machine.   
    ngrok is used to tunnel local host in to public network.  
+   
+   ## Webpage preview
+   
+  ![app1](https://user-images.githubusercontent.com/48724432/156413899-5c506cf3-948c-409a-8af6-676adc726473.PNG)
+  
+  
+  ### Predictions
+  
+  ![app3](https://user-images.githubusercontent.com/48724432/156414472-3ba848bd-cab1-4aa4-8202-7791e8399afb.png)
+
+ 
+ 
