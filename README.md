@@ -34,22 +34,22 @@ Source: https://www.kaggle.com/stackoverflow/stacksample
 
   Source : https://www.kaggle.com/stackoverflow/stacksample/data
   
-  There are 3 Data frames/n
-  questions.csv - which contains questions and relavant details
-  tags.csv - tags tagged to each question
-  answers.csv - which contains answers and relavant details
+  There are 3 Data frames  
+  questions.csv - which contains questions and relavant details  
+  tags.csv - tags tagged to each question  
+  answers.csv - which contains answers and relavant details  
   
 Every question contains 
 
-  Id – unique id assigned to every question when a question is posted
-  Title – summary of the question asked
-  Body - description of the question
-  Tags – categories that questions that belong to
-  Answers – accepted answer to the posted question
-  Score – no of upvotes
-  Question created date - date when question is posted
-  Answer created date - date when the answer is posted
-  owner id - User id of each user
+  Id – unique id assigned to every question when a question is posted  
+  Title – summary of the question asked  
+  Body - description of the question  
+  Tags – categories that questions that belong to  
+  Answers – accepted answer to the posted question  
+  Score – no of upvotes  
+  Question created date - date when question is posted  
+  Answer created date - date when the answer is posted  
+  owner id - User id of each user  
 
 
 Total dataset consist of 1263995 questions and 37000 unique tags with 2million questions anwsered.
@@ -61,15 +61,15 @@ Objective: return similar questions for each question given by user using simiar
 
 Constraints:
 
-    embeddings for every data point is required.
-    compute constrains and scalability
-    Some Latency constraints.
+   embeddings for every data point is required.  
+   compute constrains and scalability.  
+   Some Latency constraints.  
 
 ## Pre-processing text data
 
-Concatenating tags tagged to each question and merging the feature with question's data frame.
-using regular expression to remove tags and clean the data.
-Tried spell checkers on data, unfortunately none of them performed well
+Concatenating tags tagged to each question and merging the feature with question's data frame.  
+using regular expression to remove tags and clean the data.  
+Tried spell checkers on data, unfortunately none of them performed well.    
 
 ## Exploratory Data Analysis
 
@@ -155,6 +155,6 @@ Tried spell checkers on data, unfortunately none of them performed well
     
 
 ## Model Deployment
-   Due to compute constrains only title of the question is used during deployment.
-   Flask api is used to host the applicaton in local machine. 
-   ngrok is used to tunnel local host in to public network.
+   Due to compute constrains only BERT with title of the question is used during deployment.  
+   Flask api is used to host the applicaton in local machine.   
+   ngrok is used to tunnel local host in to public network.  
